@@ -5,4 +5,3 @@ def readText(fileString):
             prompt = line.strip()
             prompts.append(prompt)
         return prompts
-readText("madLib.txt")
