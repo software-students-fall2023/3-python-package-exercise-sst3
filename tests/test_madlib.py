@@ -1,14 +1,24 @@
 import pytest
+import tempfile
 from src.sstgame import madlib
 
-def test_first():
-    assert 3 == 3
+def test_readTextEmptyFile():
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
+        tmp_file.write('')
+    prompts = madlib.readText(tmp_file.name)
+    assert len(prompts) == 0
 
-# class Tests:
+def test_readTextFirstLine():
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
+        tmp_file.write('hello worlds')
+    prompts = madlib.readText(tmp_file.name)
+    assert len(prompts) == 1
+    assert prompts[0] == "hello worlds"
 
-#     @pytest.fixture
-#     def test_first(self):
-#         assert 3 == 3
-#     # def test_ReadTextSize():
-#     #     prompts = readText("text.txt")
-#     #     assert(len(prompts) == 3)
+def test_readTextMultipleLines():
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
+        tmp_file.write('hello worlds \n pineapple')
+    prompts = madlib.readText(tmp_file.name)
+    assert len(prompts) == 2
+    assert prompts[0] == "hello worlds"
+    assert prompts[1] == "pineapple"
