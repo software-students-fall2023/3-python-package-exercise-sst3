@@ -1,3 +1,4 @@
+import re
 def readText(fileString):
     prompts = []
     with open(fileString, "r") as file:
@@ -5,3 +6,9 @@ def readText(fileString):
             prompt = line.strip()
             prompts.append(prompt)
         return prompts
+
+def extractWords(madlib):
+    pattern = r'\[([^\[\]]+)\]'
+    matches = re.findall(pattern, madlib)
+    
+    return matches
