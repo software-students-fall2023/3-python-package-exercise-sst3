@@ -1,5 +1,4 @@
 from src.sstgame.madlib import readText
-
 import random
 
 def wouldYouRather(fileName):
