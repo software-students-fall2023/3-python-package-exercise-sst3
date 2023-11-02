@@ -1,4 +1,6 @@
 import re
+import random
+
 def readText(fileString):
     prompts = []
     with open(fileString, "r") as file:
@@ -8,7 +10,33 @@ def readText(fileString):
         return prompts
 
 def extractWords(madlib):
-    pattern = r'\[([^\[\]]+)\]'
+    pattern = r'\[(.*?)\]'
     matches = re.findall(pattern, madlib)
     
     return matches
+
+def userWords(replaceArray):
+    usersChoice = []
+
+    for word in replaceArray:
+        temp = input("Please enter a " + word + ": ")
+        usersChoice.append(temp)
+
+    return usersChoice
+
+def replace(originalPrompt, replacementWords):
+    pattern = r'\[(.*?)\]'
+    
+    def replace_match(match):
+        return replacementWords.pop(0)
+    
+    newPrompt = re.sub(pattern, replace_match, originalPrompt)
+    
+    return newPrompt
+
+def madlib(fileString):
+    prompts = readText(fileString)
+    randomPrompt = random.choice(prompts)
+    extractedWords = extractWords(randomPrompt)
+    usersWords = userWords(extractedWords)
+    return replace(randomPrompt, usersWords)
