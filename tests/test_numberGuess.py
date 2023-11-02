@@ -1,5 +1,7 @@
 import pytest
 from src.sstgame import numberGuess
+from io import StringIO
+
 
 def test_chooseRandomPositive():
     result = numberGuess.chooseRandom(1, 3)
@@ -24,3 +26,34 @@ def test_compareLessThan():
 def test_compareEqualTo():
     result = numberGuess.compare(0, 0)
     assert result == 0
+
+def test_numberGuessHigher(capfd, monkeypatch):
+    input_string = StringIO("10\n3")
+    monkeypatch.setattr('sys.stdin', input_string)
+
+    numberGuess.numberGuess(3,3)
+
+    captured = capfd.readouterr()
+
+    assert 'Enter your guess: Your guess was too high, please try again\nEnter your guess: You guessed the correct number!\n' == captured.out
+
+def test_numberGuessLower(capfd, monkeypatch):
+    input_string = StringIO("0\n3")
+    monkeypatch.setattr('sys.stdin', input_string)
+
+    numberGuess.numberGuess(3,3)
+
+    captured = capfd.readouterr()
+
+    assert 'Enter your guess: Your guess was too low, please try again\nEnter your guess: You guessed the correct number!\n' == captured.out
+
+def test_numberGuessExact(capfd, monkeypatch):
+    input_string = StringIO("3")
+    monkeypatch.setattr('sys.stdin', input_string)
+
+    numberGuess.numberGuess(3,3)
+
+    captured = capfd.readouterr()
+
+    assert 'Enter your guess: You guessed the correct number!\n' == captured.out
+
