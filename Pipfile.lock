@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6989cbfe1c8c21f575eb0086b96857ed2d286c14b3a4575362a318bbb894e8ef"
+            "sha256": "8f1aedc457afa65289e6a591f90baa751eb2544af5b663e9846bdcc2a7d8790a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -13,18 +13,15 @@
                 "name": "pypi",
                 "url": "https://pypi.org/simple",
                 "verify_ssl": true
+            },
+            {
+                "name": "testpypi",
+                "url": "https://test.pypi.org/simple/",
+                "verify_ssl": true
             }
         ]
     },
     "default": {
-        "colorama": {
-            "hashes": [
-                "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44",
-                "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
-            ],
-            "markers": "sys_platform == 'win32'",
-            "version": "==0.4.6"
-        },
         "iniconfig": {
             "hashes": [
                 "sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3",
@@ -57,6 +54,15 @@
             "index": "pypi",
             "markers": "python_version >= '3.7'",
             "version": "==7.4.3"
+        },
+        "sstgame": {
+            "hashes": [
+                "sha256:62ba97fcb2137cbbe9a191aeb2d3d11a6c3d63092f1d2d02914da53e1e48a7de",
+                "sha256:84942648360b6a63c568ac4614eda691e11f7974aecb552d7e4955529f1fcd5b"
+            ],
+            "index": "testpypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==0.0.6"
         }
     },
     "develop": {}
