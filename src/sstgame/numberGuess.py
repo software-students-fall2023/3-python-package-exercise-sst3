@@ -12,7 +12,11 @@ def compare(answer, guess):
         return 1
     return -1
 
-def numberGuess(minValue, maxValue):
+def numberGuess(minValue = None, maxValue = None):
+    if(minValue == None):
+        minValue = 0
+    if(maxValue == None):
+        maxValue = 100
     answer = chooseRandom(minValue, maxValue)
     guess = int(input("Enter your guess: "))
     while(compare(guess, answer) != 0):
