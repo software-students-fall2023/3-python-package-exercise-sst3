@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8f1aedc457afa65289e6a591f90baa751eb2544af5b663e9846bdcc2a7d8790a"
+            "sha256": "811f8ca9170d30a5f4c7afd036da9856bd5cdae71057ab46a0c9a7868810b249"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -57,12 +57,12 @@
         },
         "sstgame": {
             "hashes": [
-                "sha256:62ba97fcb2137cbbe9a191aeb2d3d11a6c3d63092f1d2d02914da53e1e48a7de",
-                "sha256:84942648360b6a63c568ac4614eda691e11f7974aecb552d7e4955529f1fcd5b"
+                "sha256:7d8a6beded718a8592dbe99e2ac856891486ba0ee408aab1bec4e3a57be663f0",
+                "sha256:a6ebdcb334bcc9040312f1852440ef7c470efd049020532aa96484b74eb15cb5"
             ],
             "index": "testpypi",
             "markers": "python_version >= '3.7'",
-            "version": "==0.0.6"
+            "version": "==0.0.9"
         }
     },
     "develop": {}
