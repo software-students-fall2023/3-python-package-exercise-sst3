@@ -1,5 +1,3 @@
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
-
 # Python Package Exercise
 
 A little exercise to create a Python package, build it, test it, distribute it, and use it.
