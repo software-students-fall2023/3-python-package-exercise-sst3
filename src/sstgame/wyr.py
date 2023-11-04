@@ -10,4 +10,5 @@ def wouldYouRather(fileName = None):
     result = readText(fileName)
     prompt = random.choice(result)
     print(prompt)
-    input("Please enter Yes or No")
+    input("Please enter 1 for choice 1 or 2 for choice 2: ")
+    return 1
