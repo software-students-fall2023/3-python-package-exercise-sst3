@@ -53,6 +53,7 @@ each entry is on a seperate line. If you do not enter an argument, the function 
 
 To access the wouldYouRather function please do wyr.wouldYouRather(file.txt)
 
+[Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L18)
 
 ### randomGame Function
 
