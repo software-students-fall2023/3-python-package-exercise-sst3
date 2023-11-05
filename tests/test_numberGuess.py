@@ -35,7 +35,7 @@ def test_numberGuessHigher(capfd, monkeypatch):
 
     captured = capfd.readouterr()
 
-    assert 'Enter your guess: Your guess was too high, please try again\nEnter your guess: You guessed the correct number!\n' == captured.out
+    assert 'Please enter a guess between 3 and 3\nEnter your guess: Your guess was too high, please try again\nEnter your guess: You guessed the correct number!\n' == captured.out
 
 def test_numberGuessLower(capfd, monkeypatch):
     input_string = StringIO("0\n3")
@@ -45,7 +45,7 @@ def test_numberGuessLower(capfd, monkeypatch):
 
     captured = capfd.readouterr()
 
-    assert 'Enter your guess: Your guess was too low, please try again\nEnter your guess: You guessed the correct number!\n' == captured.out
+    assert 'Please enter a guess between 3 and 3\nEnter your guess: Your guess was too low, please try again\nEnter your guess: You guessed the correct number!\n' == captured.out
 
 def test_numberGuessExact(capfd, monkeypatch):
     input_string = StringIO("3")
@@ -55,5 +55,5 @@ def test_numberGuessExact(capfd, monkeypatch):
 
     captured = capfd.readouterr()
 
-    assert 'Enter your guess: You guessed the correct number!\n' == captured.out
+    assert 'Please enter a guess between 3 and 3\nEnter your guess: You guessed the correct number!\n' == captured.out
 
