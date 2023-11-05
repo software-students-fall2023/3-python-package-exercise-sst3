@@ -17,6 +17,7 @@ def numberGuess(minValue = None, maxValue = None):
         minValue = 0
     if(maxValue == None):
         maxValue = 100
+    print("Please enter a guess between " + str(minValue) + " and " + str(maxValue))
     answer = chooseRandom(minValue, maxValue)
     guess = int(input("Enter your guess: "))
     while(compare(guess, answer) != 0):
