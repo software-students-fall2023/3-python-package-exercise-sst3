@@ -1,5 +1,6 @@
 import re
 import random
+import os
 
 def readText(fileString):
     prompts = []
@@ -34,7 +35,11 @@ def replace(originalPrompt, replacementWords):
     
     return newPrompt
 
-def madlib(fileString):
+def madlib(fileString = None):
+    if fileString is None:
+        package_dir = os.path.dirname(__file__)
+        fileString = os.path.join(package_dir, "madlib.txt")
+
     prompts = readText(fileString)
     randomPrompt = random.choice(prompts)
     extractedWords = extractWords(randomPrompt)

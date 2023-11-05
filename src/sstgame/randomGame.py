@@ -4,8 +4,8 @@ from src.sstgame import wyr
 import random
 import os
 
-def randomGame(minValue, maxValue, madLibFile, wyrFile, numberGuessAssert = True, madLibAssert = True, wyrAssert = True):
-    index = 0;
+def randomGame(minValue = None, maxValue = None, madLibFile = None, wyrFile = None, numberGuessAssert = True, madLibAssert = True, wyrAssert = True):
+    index = 0
     numberGuessIndex = -1
     madLibIndex = -1
     wyrIndex = -1
