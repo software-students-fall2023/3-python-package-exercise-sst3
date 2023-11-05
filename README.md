@@ -3,7 +3,7 @@
 ### Installing
 
 Please use pip to install.
-To install run pip install sstgame
+To install run pip install sstgame==0.1.8
 
 ### Importing
 
