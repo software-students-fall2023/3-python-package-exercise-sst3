@@ -34,6 +34,8 @@ do not enter anything.
 
 To access the madlibs function please do madlib.madlib(filename)
 
+[Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L8)
+
 ### numberGuess Function
 
 To use the numberGuess function you may pass in a minimum value which will be the lower bound of the number you have to guess and
@@ -42,6 +44,7 @@ will be from 0-100 inclusive.
 
 To access the numberGuess function please do numberGuess.numberGuess(minValue, maxValue)
 
+[Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L13)
 
 ### wouldYouRather Function
 
@@ -50,6 +53,7 @@ each entry is on a seperate line. If you do not enter an argument, the function 
 
 To access the wouldYouRather function please do wyr.wouldYouRather(file.txt)
 
+[Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L18)
 
 ### randomGame Function
 
@@ -58,6 +62,8 @@ The minValue and maxValue will be the inputs for the numberGuess game, the madLi
 To include a game to be chosen at random please pass in True for the game you would like to include. Please pass in False to exclude it. By default all games are included and set to True.
 
 To access the randomGame function please do randomGame.randomGame(minValue, maxValue, madLibFile, wyrFile, numberGuessAssert, madLibAssert, wyrAssert)
+
+[Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L23)
 
 ### How To Contribute
 
