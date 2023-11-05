@@ -1,4 +1,4 @@
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/actions/workflows/python-package.yaml/badge.svg)
 
 ### Installing
 
@@ -57,3 +57,7 @@ In order to contribute please clone https://github.com/software-students-fall202
 
 [Richard Li](https://github.com/Silver1793)
 [Ryan Zhang](https://github.com/CouriersRyan)
+
+### Link to Package
+
+https://pypi.org/project/sstgame/0.1.8/
