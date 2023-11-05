@@ -1,4 +1,4 @@
-![example workflow](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/actions/workflows/python-package/badge.svg)
+![example workflow](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/actions/workflows/python-package.yml/badge.svg)
 
 ### Installing
 
