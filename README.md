@@ -34,6 +34,8 @@ do not enter anything.
 
 To access the madlibs function please do madlib.madlib(filename)
 
+[Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L8)
+
 ### numberGuess Function
 
 To use the numberGuess function you may pass in a minimum value which will be the lower bound of the number you have to guess and
