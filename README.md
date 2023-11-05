@@ -20,7 +20,7 @@ Please add from sstgame import wyr to import the would you rather module
 
 ## Import Random Number game
 
-Please add from sstgame import randomGuess to import the random number game module
+Please add from sstgame import numberGuess to import the random number game module
 
 ## Import Random Number game
 
@@ -32,22 +32,32 @@ To use the madlibs function you may pass in your own madlib text file if you wou
 Please ensure that each madlib is on a seperate line in the text file. If you would like to use the default text file please
 do not enter anything.
 
+To access the madlibs function please do madlib.madlib(filename)
+
 ### numberGuess Function
 
 To use the numberGuess function you may pass in a minimum value which will be the lower bound of the number you have to guess and
 a max value which will be the upper bound of what you will have to guess. If you do not want to pass in any arguments the default
 will be from 0-100 inclusive.
 
+To access the numberGuess function please do numberGuess.numberGuess(minValue, maxValue)
+
+
 ### wouldYouRather Function
 
 To use the wouldYouRather function you may pass in a txt file containing your own custom would you rathers. Please make sure that
 each entry is on a seperate line. If you do not enter an argument, the function will use the default txt file.
+
+To access the wouldYouRather function please do wyr.wouldYouRather(file.txt)
+
 
 ### randomGame Function
 
 To use the randomGame function you may pass in arguments for minValue, maxValue, madLibFile, wyrFile, numberGuessAssert, madLibAssert, wyrAssert
 The minValue and maxValue will be the inputs for the numberGuess game, the madLibFile will be the txt file for the madlib function, the wyrFile will be the txt for the wouldYouRather function. If you choose to not provide an arguments the default arguments will be used, please refer to each functions section in the README.md for more information.
 To include a game to be chosen at random please pass in True for the game you would like to include. Please pass in False to exclude it. By default all games are included and set to True.
+
+To access the randomGame function please do randomGame.randomGame(minValue, maxValue, madLibFile, wyrFile, numberGuessAssert, madLibAssert, wyrAssert)
 
 ### How To Contribute
 
