@@ -73,6 +73,7 @@ In order to contribute please clone https://github.com/software-students-fall202
 
 [Richard Li](https://github.com/Silver1793)
 [Ryan Zhang](https://github.com/CouriersRyan)
+[Jeffrey Saeteros] (https://github.com/jeffreysaeteros)
 
 ### Link to Package
 
