@@ -17,3 +17,4 @@ sstgame = {version = "==0.2.0", index = "testpypi"}
 [requires]
 python_version = "3.12"
 python_full_version = "3.12.0"
+python_full_version = "3.9.6"

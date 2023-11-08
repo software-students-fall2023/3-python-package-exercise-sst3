@@ -22,6 +22,10 @@ Please add `from sstgame import wyr` to import the would you rather module
 
 Please add `from sstgame import numberGuess` to import the random number game module
 
+## Import Hangman game
+
+Please add `from src.sstgame import hangman` to import the hangman game module
+
 ## Import Random Number game
 
 Please add `from sstgame import randomGame` to import the random game module
@@ -65,6 +69,13 @@ To access the randomGame function please do `randomGame.randomGame(minValue, max
 
 [Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L23)
 
+
+### hangman Function
+
+To use the hangman function you may pass in your own set of words in a text file if you would like to use your own custom words. Please ensure that each word is seperated by a comma in the text file. If you would like to use the default text file please do not enter anything.
+
+To access the hangman function please do hangman.hangman(filename)
+
 ### How To Contribute
 
 In order to contribute please clone https://github.com/software-students-fall2023/3-python-package-exercise-sst3.git and create a branch with your contributions. Please install pipenv and use pipenv shell to set up your virtual enviornment. For testing please upload the package with your changes to TestPyPi and install them into your virtual enviornment to run your tests. Please make sure to write test codes using pytest for any created functions.
@@ -73,6 +84,7 @@ In order to contribute please clone https://github.com/software-students-fall202
 
 [Richard Li](https://github.com/Silver1793)
 [Ryan Zhang](https://github.com/CouriersRyan)
+[Jeffrey Saeteros] (https://github.com/jeffreysaeteros)
 
 ### Link to Package
 
