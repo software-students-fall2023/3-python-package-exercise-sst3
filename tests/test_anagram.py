@@ -1,10 +1,13 @@
 import pytest
+import os
 from src.sstgame.anagram import makeSet, generateLetters, is_valid_answer, calcScore
 from io import StringIO
 
 @pytest.fixture
 def words_set():
-    return makeSet('anagram.txt')
+    package_dir = os.path.dirname(__file__)
+    fileName = os.path.join(package_dir, "anagram.txt")
+    return makeSet(fileName)
 
 def test_len_generateLetters():
     letters = generateLetters(7)
