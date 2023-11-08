@@ -1,8 +1,8 @@
-from src.sstgame import numberGuess
-from src.sstgame import madlib
-from src.sstgame import wyr
-from src.sstgame import anagram
-from src.sstgame import hangman
+from sstgame import numberGuess
+from sstgame import madlib
+from sstgame import wyr
+from sstgame import anagram
+from sstgame import hangman
 import random
 
 def randomGame(
