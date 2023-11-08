@@ -1,12 +1,11 @@
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
-packages = ["find:", "src"]
 
 [project]
 name = "sstgame"
 description = "An example of a package developed with pyenv, built with build using setuptools, uploaded to PyPI using twine, and distributed via pip."
-version = "0.2.5"
+version = "0.2.6"
 authors = [
   { name="Richard Li", email="rjl9943@nyu.edu" },
 ]

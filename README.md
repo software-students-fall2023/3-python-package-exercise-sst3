@@ -3,7 +3,7 @@
 ### Installing
 
 Please use `pip` to install.
-To install run `pip install sstgame==0.2.5`
+To install run `pip install sstgame==0.2.7`
 
 ### Importing
 
@@ -93,4 +93,4 @@ In order to contribute please clone https://github.com/software-students-fall202
 
 ### Link to Package
 
-https://pypi.org/project/sstgame/0.2.5/
+https://pypi.org/project/sstgame/0.2.7/
