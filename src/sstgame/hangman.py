@@ -75,7 +75,8 @@ def hangman(fileString=None):
         elif user_letter in used_letters:
             print("You have already used that letter. Please try again.")
         else:
-            print("Invalid character")
+            tries = 0
+            print("Invalid character. You lost all of your lives")
 
     if tries == 0:
         print("\nNo more tries left. The word was", word)
