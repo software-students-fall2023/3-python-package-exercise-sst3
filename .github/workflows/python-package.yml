@@ -38,6 +38,7 @@ jobs:
         run: |
           pip install coverage
           echo "LOOOOOOOOOK $(pwd)"
+          cd ..
           coverage run --data-file .coverage -m pytest -s
           coverage json --data-file .coverage -o buf/tests/coverage.json
           coverage report --data-file .coverage
