@@ -1,2 +1,3 @@
 include src/sstgame/madlib.txt
 include src/sstgame/wyr.txt
+include src/sstgame/anagram.txt
