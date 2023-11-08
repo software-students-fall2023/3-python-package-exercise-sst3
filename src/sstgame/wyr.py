@@ -1,4 +1,4 @@
-from src.sstgame.madlib import readText
+from sstgame.madlib import readText
 import random
 import os
 
