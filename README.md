@@ -63,6 +63,7 @@ To access the wouldYouRather function please do `wyr.wouldYouRather(file.txt)`
 
 To use the anagram function please pass in a txt file. If you do not pass in a .txt file the default txt file will be used instead.
 To access the anagram game function please do `anagram.anagram(file.txt)`
+
 [Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/23c56821ad30ab1d03b79d2c8dee65c65039bf90/example.py#L40)
 
 ### randomGame Function
