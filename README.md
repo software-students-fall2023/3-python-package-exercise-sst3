@@ -76,7 +76,7 @@ To use the randomGame function you may pass in arguments for minValue, maxValue,
 The minValue and maxValue will be the inputs for the numberGuess game, the madLibFile will be the txt file for the madlib function, the wyrFile will be the txt for the wouldYouRather function. If you choose to not provide an arguments the default arguments will be used, please refer to each functions section in the README.md for more information.
 To include a game to be chosen at random please pass in True for the game you would like to include. Please pass in False to exclude it. By default, all games are included and set to True.
 
-To access the randomGame function please do `randomGame.randomGame(minValue, maxValue, madLibFile, wyrFile, numberGuessAssert, madLibAssert, wyrAssert)`
+To access the randomGame function please do `randomGame.randomGame(minValue, maxValue, madLibFile, wyrFile, hangmanFile, anagramFile,numberGuessAssert, madLibAssert,wyrAssert, hangmanAssert, anagramAssert)`
 
 [Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L23)
 
