@@ -53,9 +53,14 @@ def calcScore(word, letters):
     return score
 
 
-def anagram():
-    package_dir = os.path.dirname(__file__)
-    fileString = os.path.join(package_dir, "anagram.txt") 
+def anagram(fileString):
+    if fileString is None:
+        package_dir = os.path.dirname(__file__)
+        fileString = os.path.join(package_dir, "anagram.txt")
+    else:
+        package_dir = os.path.dirname(__file__)
+        fileString = os.path.join(package_dir, fileString)
+        
     words_set = makeSet(fileString) #Makes the anagram.txt into a set for easy access later
 
     #Initiate all variables for tracking
