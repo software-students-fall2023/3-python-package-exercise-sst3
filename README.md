@@ -22,6 +22,10 @@ Please add `from sstgame import wyr` to import the would you rather module
 
 Please add `from sstgame import numberGuess` to import the random number game module
 
+## Import Hangman game
+
+Please add `from src.sstgame import hangman` to import the hangman game module
+
 ## Import Random Number game
 
 Please add `from sstgame import randomGame` to import the random game module
