@@ -26,7 +26,7 @@ Please add `from sstgame import numberGuess` to import the random number game mo
 
 Please add `from src.sstgame import hangman` to import the hangman game module
 
-## Import Random Number game
+## Import Random game
 
 Please add `from sstgame import randomGame` to import the random game module
 
