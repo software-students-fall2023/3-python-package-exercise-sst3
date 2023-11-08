@@ -37,7 +37,7 @@ jobs:
       - name: Generate Report
         run: |
           pip install coverage
-          cd 3-python-package-exercise-sst3/
+          echo "HERE $(pwd)"
           coverage run --data-file .coverage -m pytest -s
           coverage json --data-file .coverage -o buf/tests/coverage.json
           coverage report --data-file .coverage
