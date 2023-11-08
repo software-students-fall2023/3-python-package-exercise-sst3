@@ -88,4 +88,4 @@ In order to contribute please clone https://github.com/software-students-fall202
 
 ### Link to Package
 
-https://pypi.org/project/sstgame/0.2.0/
+https://pypi.org/project/sstgame/0.2.1/
