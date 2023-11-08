@@ -1,9 +1,11 @@
 from src.sstgame import numberGuess
 from src.sstgame import madlib
 from src.sstgame import wyr
+from src.sstgame import anagram
 from src.sstgame import hangman
 import random
 import os
+
 
 
 def randomGame(
@@ -16,11 +18,13 @@ def randomGame(
     wyrAssert=True,
     hangmanFile=None,
     hangmanAssert=True,
+    anagramAssert = True
 ):
     index = 0
     numberGuessIndex = -1
     madLibIndex = -1
     wyrIndex = -1
+    anagramIndex = -1
     hangmanIndex = -1
 
     # Check which games to include.
@@ -36,6 +40,10 @@ def randomGame(
         wyrIndex = index
         index += 1
 
+    if anagramIndex == True :
+        anagramIndex = index
+        index +=1
+        
     if hangmanAssert == True:
         hangmanIndex = index
         index += 1
@@ -59,6 +67,9 @@ def randomGame(
         print("Running Would You Rather?:\n")
         wyr.wouldYouRather(wyrFile)
         return 2
+    elif randomInt == anagramIndex:
+        print("Running Anagram:\n")
+        anagram.anagram()
     elif randomInt == hangmanIndex:
         print("Running Hangman:\n")
         hangman.hangman(hangmanFile)
