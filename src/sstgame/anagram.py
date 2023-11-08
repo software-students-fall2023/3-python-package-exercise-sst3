@@ -53,7 +53,6 @@ def calcScore(word, letters):
     return score
 
 
-#Main file, *args tag for future arguments
 def anagram():
     package_dir = os.path.dirname(__file__)
     fileString = os.path.join(package_dir, "anagram.txt") 
@@ -75,6 +74,7 @@ def anagram():
             print("Sorry, your word is invalid or not present in the set.")
         attempts= attempts - 1
     
-anagram()
+if __name__ == "__main__":
+    anagram()
    
     
