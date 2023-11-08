@@ -3,7 +3,7 @@
 ### Installing
 
 Please use `pip` to install.
-To install run `pip install sstgame==0.2.0`
+To install run `pip install sstgame==0.2.1`
 
 ### Importing
 
@@ -59,6 +59,12 @@ To access the wouldYouRather function please do `wyr.wouldYouRather(file.txt)`
 
 [Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L18)
 
+### anagram Function
+
+To use the anagram function please pass in a txt file. If you do not pass in a .txt file the default txt file will be used instead.
+To access the anagram game function please do `anagram.anagram(file.txt)`
+[Example]
+
 ### randomGame Function
 
 To use the randomGame function you may pass in arguments for minValue, maxValue, madLibFile, wyrFile, numberGuessAssert, madLibAssert, wyrAssert
@@ -68,12 +74,6 @@ To include a game to be chosen at random please pass in True for the game you wo
 To access the randomGame function please do `randomGame.randomGame(minValue, maxValue, madLibFile, wyrFile, numberGuessAssert, madLibAssert, wyrAssert)`
 
 [Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L23)
-
-### anagram Function
-
-There are no arguments to the anagram function that need to be passed for the game to work. 
-
-To acccess the anagram game, please do `anagram.anagram()`
 
 ### How To Contribute
 
