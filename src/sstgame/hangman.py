@@ -1,18 +1,48 @@
 import random
 import string
-from words import words
+import os
+import re
 
 
-def valid_word(words):
-    word = random.choice(words["data"])
+def readText(fileString=None):
+    if fileString is None:
+        package_dir = os.path.dirname(__file__)
+        fileString = os.path.join(package_dir, "hangman.txt")
+
+    with open(fileString, "r") as file:
+        prompts = []
+        for line in file:
+            prompt = line.strip()
+            prompt = re.sub(r"[^\w,]+", "", prompt)
+            prompt = prompt.split(",")
+            if len(prompt) > 0:
+                for p in prompt:
+                    if p != "":
+                        prompts.append(p)
+    return prompts
+
+
+def valid_word(fileString=None):
+    if fileString is None:
+        package_dir = os.path.dirname(__file__)
+        fileString = os.path.join(package_dir, "hangman.txt")
+
+    all_words = readText(fileString)
+    word = random.choice(all_words)
     while "-" in word or " " in word:
-        word = random.choice(words)
+        word = random.choice(fileString)
     return word.upper()
 
 
-def hangman():
-    word = valid_word(words)
-    print("worddd in hangman", word)
+def hangman(fileString=None):
+    if fileString is None:
+        package_dir = os.path.dirname(__file__)
+        fileString = os.path.join(package_dir, "hangman.txt")
+    else:
+        package_dir = os.path.dirname(__file__)
+        fileString = os.path.join(package_dir, fileString)
+
+    word = valid_word(fileString)
     word_letters = set(word)  # letters in the word
     alphabet = set(string.ascii_uppercase)
     used_letters = set()  # what the user has guessed
