@@ -10,7 +10,7 @@ name = "testpypi"
 
 [packages]
 pytest = "*"
-sstgame = {version = "==0.2.6", index = "testpypi"}
+sstgame = {version = "==0.2.7", index = "testpypi"}
 
 [dev-packages]
 
