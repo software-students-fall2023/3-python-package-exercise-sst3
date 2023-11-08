@@ -39,7 +39,7 @@ To use the madlibs function you may pass in your own madlib text file if you wou
 Please ensure that each madlib is on a seperate line in the text file. If you would like to use the default text file please
 do not enter anything.
 
-To access the madlibs function please do `madlib.madlib(filename)`
+To access the madlibs function please do `madlib.madlib(file.txt)`
 
 [Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L8)
 
