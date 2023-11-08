@@ -26,6 +26,10 @@ Please add `from sstgame import numberGuess` to import the random number game mo
 
 Please add `from sstgame import randomGame` to import the random game module
 
+## Import Anagram Game
+
+Please add `from sstgame import anagram` to import the anagram game module
+
 ### madlibs Function
 
 To use the madlibs function you may pass in your own madlib text file if you would like to use your own custom madlibs.
