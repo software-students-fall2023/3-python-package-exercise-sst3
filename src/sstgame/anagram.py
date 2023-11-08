@@ -53,7 +53,7 @@ def calcScore(word, letters):
     return score
 
 
-def anagram(fileString):
+def anagram(fileString = None):
     if fileString is None:
         package_dir = os.path.dirname(__file__)
         fileString = os.path.join(package_dir, "anagram.txt")
