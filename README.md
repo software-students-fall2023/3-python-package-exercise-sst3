@@ -22,13 +22,16 @@ Please add `from sstgame import wyr` to import the would you rather module
 
 Please add `from sstgame import numberGuess` to import the random number game module
 
-## Import Random Number game
-
-Please add `from sstgame import randomGame` to import the random game module
-
 ## Import Anagram Game
 
 Please add `from sstgame import anagram` to import the anagram game module
+
+## Import Hangman Game
+Please add `from sstgame import hangman` to import the anagram game module
+
+## Import Random Game Module
+
+Please add `from sstgame import randomGame` to import the random game module
 
 ### madlibs Function
 
