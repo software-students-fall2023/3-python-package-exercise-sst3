@@ -5,8 +5,8 @@ from io import StringIO
 
 @pytest.fixture
 def words_set():
-    package_dir = os.path.dirname(__file__)
-    fileName = os.path.join(package_dir, "anagram.txt")
+
+    fileName = '/home/runner/work/3-python-package-exercise-sst3/3-python-package-exercise-sst3/src/sstgame/anagram.txt'
     return makeSet(fileName)
 
 def test_len_generateLetters():
