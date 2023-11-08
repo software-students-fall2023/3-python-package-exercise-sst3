@@ -4,19 +4,17 @@ from src.sstgame import wyr
 from src.sstgame import anagram
 from src.sstgame import hangman
 import random
-import os
-
-
 
 def randomGame(
     minValue=None,
     maxValue=None,
     madLibFile=None,
     wyrFile=None,
+    hangmanFile=None,
+    anagramFile=None,
     numberGuessAssert=True,
     madLibAssert=True,
     wyrAssert=True,
-    hangmanFile=None,
     hangmanAssert=True,
     anagramAssert = True
 ):
@@ -40,7 +38,7 @@ def randomGame(
         wyrIndex = index
         index += 1
 
-    if anagramIndex == True :
+    if anagramAssert == True:
         anagramIndex = index
         index +=1
         
@@ -67,13 +65,14 @@ def randomGame(
         print("Running Would You Rather?:\n")
         wyr.wouldYouRather(wyrFile)
         return 2
-    elif randomInt == anagramIndex:
-        print("Running Anagram:\n")
-        anagram.anagram()
     elif randomInt == hangmanIndex:
         print("Running Hangman:\n")
         hangman.hangman(hangmanFile)
         return 3
+    elif randomInt == anagramIndex:
+        print("Running Anagram:\n")
+        anagram.anagram(anagramFile)
+        return 4
     else:
         # Program should never reach here.
         print("No game was found.")
