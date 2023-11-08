@@ -1,20 +1,16 @@
 import pytest
+import tempfile
 from src.sstgame.anagram import makeSet, generateLetters, is_valid_answer, calcScore
 from io import StringIO
 
-@pytest.fixture
-def words_set():
-    return makeSet('anagram.txt')
-
+    
 def test_len_generateLetters():
     letters = generateLetters(7)
-
     assert len(letters)==7 #Check if the result of generateLetters is the proper length
     assert any(letter in 'aeiou' for letter in letters) #Check if there is a vowel in letters
-     
-    
 
-def test_is_valid_answer(words_set):
+def test_is_valid_answer():
+    words_set= {'pear', 'ear','apple'}
     letters = ['p','e','a','r']
 
     assert is_valid_answer(words_set, 'pear', letters) == True #should work

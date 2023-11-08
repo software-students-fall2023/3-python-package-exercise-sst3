@@ -1,14 +1,16 @@
 from src.sstgame import numberGuess
 from src.sstgame import madlib
 from src.sstgame import wyr
+from src.sstgame import anagram
 import random
 import os
 
-def randomGame(minValue = None, maxValue = None, madLibFile = None, wyrFile = None, numberGuessAssert = True, madLibAssert = True, wyrAssert = True):
+def randomGame(minValue = None, maxValue = None, madLibFile = None, wyrFile = None, numberGuessAssert = True, madLibAssert = True, wyrAssert = True, anagramAssert = True):
     index = 0
     numberGuessIndex = -1
     madLibIndex = -1
     wyrIndex = -1
+    anagramIndex = -1
 
     # Check which games to include.
     if numberGuessAssert == True :
@@ -22,6 +24,10 @@ def randomGame(minValue = None, maxValue = None, madLibFile = None, wyrFile = No
     if wyrAssert == True :
         wyrIndex = index
         index += 1
+
+    if anagramIndex == True :
+        anagramIndex = index
+        index +=1
 
     if index == 0 :
         print("All games were excluded. No games were chosen!")
@@ -42,6 +48,9 @@ def randomGame(minValue = None, maxValue = None, madLibFile = None, wyrFile = No
         print("Running Would You Rather?:\n")
         wyr.wouldYouRather(wyrFile)
         return 2
+    elif randomInt == anagramIndex:
+        print("Running Anagram:\n")
+        anagram.anagram()
     else :
         # Program should never reach here.
         print("No game was found.")

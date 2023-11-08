@@ -22,13 +22,13 @@ Please add `from sstgame import wyr` to import the would you rather module
 
 Please add `from sstgame import numberGuess` to import the random number game module
 
-## Import Hangman game
-
-Please add `from src.sstgame import hangman` to import the hangman game module
-
-## Import Random game
+## Import Random Number game
 
 Please add `from sstgame import randomGame` to import the random game module
+
+## Import Anagram Game
+
+Please add `from sstgame import anagram` to import the anagram game module
 
 ### madlibs Function
 
@@ -58,14 +58,6 @@ each entry is on a seperate line. If you do not enter an argument, the function 
 To access the wouldYouRather function please do `wyr.wouldYouRather(file.txt)`
 
 [Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/19f463a3b9d2367eb3b02f2373b2896d53064654/example.py#L18)
-
-### hangman Function
-
-To use the hangman function you may pass in your own set of words in a text file if you would like to use your own custom words. Please ensure that each word is seperated by a comma in the text file. If you would like to use the default text file please do not enter anything.
-
-To access the hangman function please do hangman.hangman(filename.txt)
-
-[Example](https://github.com/software-students-fall2023/3-python-package-exercise-sst3/blob/729b546e640fc7c70994b7d2df81ff535daf4da7/example.py#L32)
 
 ### randomGame Function
 
