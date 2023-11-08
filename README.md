@@ -3,7 +3,7 @@
 ### Installing
 
 Please use `pip` to install.
-To install run `pip install sstgame==0.2.1`
+To install run `pip install sstgame==0.2.2`
 
 ### Importing
 
@@ -27,6 +27,7 @@ Please add `from sstgame import numberGuess` to import the random number game mo
 Please add `from sstgame import anagram` to import the anagram game module
 
 ## Import Hangman Game
+
 Please add `from sstgame import hangman` to import the anagram game module
 
 ## Import Random Game Module
@@ -92,4 +93,4 @@ In order to contribute please clone https://github.com/software-students-fall202
 
 ### Link to Package
 
-https://pypi.org/project/sstgame/0.2.1/
+https://pypi.org/project/sstgame/0.2.2/
