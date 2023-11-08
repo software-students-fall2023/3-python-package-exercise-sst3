@@ -3,6 +3,7 @@ from src.sstgame import numberGuess
 from src.sstgame import madlib
 from src.sstgame import randomGame
 from src.sstgame import hangman
+from src.sstgame import anagram
 
 
 def exampleMadLib():
@@ -43,3 +44,8 @@ def exampleRandomGame():
 
 print("This is the example for the randomGame function")
 exampleRandomGame()
+
+def exampleAnagram():
+    anagram()
+print("This is the example for the anagram function")
+exampleAnagram()
