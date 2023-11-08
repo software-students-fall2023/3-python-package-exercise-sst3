@@ -1,8 +1,28 @@
-from src.sstgame import numberGuess
-from src.sstgame import madlib
-from src.sstgame import wyr
-from src.sstgame import anagram
-from src.sstgame import hangman
+try:
+    from sstgame import numberGuess
+except ModuleNotFoundError:
+    from src.sstgame import numberGuess
+
+try:
+    from sstgame import madlib
+except ModuleNotFoundError:
+    from src.sstgame import madlib
+
+try:
+    from sstgame import wyr
+except ModuleNotFoundError:
+    from src.sstgame import wyr
+
+try:
+    from sstgame import anagram
+except ModuleNotFoundError:
+    from src.sstgame import anagram
+
+try:
+    from sstgame import hangman
+except ModuleNotFoundError:
+    from src.sstgame import hangman
+
 import random
 
 def randomGame(
