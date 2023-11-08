@@ -3,6 +3,27 @@ import tempfile
 from src.sstgame import wyr
 from io import StringIO
 
+def test_readTextFirstLine():
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
+        tmp_file.write('hello worlds')
+    prompts = wyr.readText(tmp_file.name)
+    assert len(prompts) == 1
+    assert prompts[0] == "hello worlds"
+
+def test_readTextMultipleLines():
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
+        tmp_file.write('hello worlds \n pineapple')
+    prompts = wyr.readText(tmp_file.name)
+    assert len(prompts) == 2
+    assert prompts[0] == "hello worlds"
+    assert prompts[1] == "pineapple"
+
+def test_readTextEmptyFile():
+    with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
+        tmp_file.write('')
+    prompts = wyr.readText(tmp_file.name)
+    assert len(prompts) == 0
+
 def test_wouldYouRatherWithFileChoiceOne(capfd, monkeypatch):
     with tempfile.NamedTemporaryFile(mode='w', delete=False) as tmp_file:
         tmp_file.write('Would you rather eat food or drink water')

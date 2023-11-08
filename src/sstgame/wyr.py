@@ -1,7 +1,13 @@
-from sstgame.madlib import readText
 import random
 import os
 
+def readText(fileString):
+    prompts = []
+    with open(fileString, "r") as file:
+        for line in file:
+            prompt = line.strip()
+            prompts.append(prompt)
+        return prompts
 
 def wouldYouRather(fileName = None):
     if fileName is None:
